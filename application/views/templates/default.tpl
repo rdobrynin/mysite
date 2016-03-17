@@ -21,6 +21,7 @@
         <![endif]-->
         <script src="{base_url('bower_components/jquery-ui/jquery-ui.min.js')}"></script>
         <script src="{base_url('bower_components/jquery-validation/dist/jquery.validate.min.js')}"></script>
+        <script src="{base_url('bower_components/handlebars/handlebars.min.js')}"></script>
         <script type="text/javascript"
                 src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
         <script type="text/javascript"

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-11 17:49:25
+/* Smarty version 3.1.29, created on 2016-03-17 11:51:45
   from "/Applications/MAMP/htdocs/mysite/application/views/templates/default.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56e2e905467d23_48709367',
+  'unifunc' => 'content_56ea7e31ee2d17_07927000',
   'file_dependency' => 
   array (
     'a72da298d2b7ca6bb3b38b7d264b75677fdf0ab3' => 
     array (
       0 => '/Applications/MAMP/htdocs/mysite/application/views/templates/default.tpl',
-      1 => 1457711360,
+      1 => 1458208288,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56e2e905467d23_48709367 ($_smarty_tpl) {
+function content_56ea7e31ee2d17_07927000 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <!doctype html>
@@ -27,7 +27,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 <head>
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "assets", array (
-  0 => 'block_127477123356e2e9054345d8_10951113',
+  0 => 'block_207925815856ea7e31ea7d37_16245828',
   1 => false,
   3 => 0,
   2 => 0,
@@ -38,7 +38,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "assets", array (
 <body>
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "header", array (
-  0 => 'block_149729499556e2e90545c8b9_91653901',
+  0 => 'block_38910076856ea7e31ed8500_30584526',
   1 => false,
   3 => 0,
   2 => 0,
@@ -47,7 +47,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "header", array (
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "footer", array (
-  0 => 'block_210638930256e2e905463285_82341844',
+  0 => 'block_37539989856ea7e31ede8b7_47325035',
   1 => false,
   3 => 0,
   2 => 0,
@@ -57,7 +57,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "footer", array (
 </body>
 </html><?php }
 /* {block 'assets'}  file:default.tpl */
-function block_127477123356e2e9054345d8_10951113($_smarty_tpl, $_blockParentStack) {
+function block_207925815856ea7e31ea7d37_16245828($_smarty_tpl, $_blockParentStack) {
 ?>
 
         <meta charset="utf-8">
@@ -69,10 +69,13 @@ function block_127477123356e2e9054345d8_10951113($_smarty_tpl, $_blockParentStac
 </title>
         <link rel="stylesheet" href="<?php echo base_url('stylesheets/styles.css');?>
 ">
+        <!--[if !IE]><!-->
         <?php echo '<script'; ?>
  src="<?php echo base_url('bower_components/jquery/dist/jquery.min.js');?>
 "><?php echo '</script'; ?>
 >
+        <!--<![endif]-->
+
         <!--[if lte IE 8]>
         <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><?php echo '</script'; ?>
@@ -89,6 +92,10 @@ function block_127477123356e2e9054345d8_10951113($_smarty_tpl, $_blockParentStac
 >
         <?php echo '<script'; ?>
  src="<?php echo base_url('bower_components/jquery-validation/dist/jquery.validate.min.js');?>
+"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="<?php echo base_url('bower_components/handlebars/handlebars.min.js');?>
 "><?php echo '</script'; ?>
 >
         <?php echo '<script'; ?>
@@ -117,7 +124,7 @@ function block_127477123356e2e9054345d8_10951113($_smarty_tpl, $_blockParentStac
 }
 /* {/block 'assets'} */
 /* {block 'header'}  file:default.tpl */
-function block_149729499556e2e90545c8b9_91653901($_smarty_tpl, $_blockParentStack) {
+function block_38910076856ea7e31ed8500_30584526($_smarty_tpl, $_blockParentStack) {
 ?>
 
 <header id="header">
@@ -127,7 +134,7 @@ function block_149729499556e2e90545c8b9_91653901($_smarty_tpl, $_blockParentStac
 }
 /* {/block 'header'} */
 /* {block 'footer'}  file:default.tpl */
-function block_210638930256e2e905463285_82341844($_smarty_tpl, $_blockParentStack) {
+function block_37539989856ea7e31ede8b7_47325035($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <footer>
