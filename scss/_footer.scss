@@ -1,0 +1,17 @@
+footer {
+  position: relative;
+  float: left;
+  height: 100px;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  small {
+    &.copyright {
+      font-weight: 300;
+    }
+  }
+  .content {
+    padding: 20px;
+  }
+}

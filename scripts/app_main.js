@@ -20,6 +20,10 @@ requirejs.config({
         placeholder: {
             deps:['jquery'],
             exports:"placeholder"
+        },
+        handlebars: {
+            deps:['handlebars'],
+            exports:"handlebars"
         }
 
     }
@@ -30,5 +34,9 @@ requirejs.config({
 
 require(['jquery', 'dom_ready', 'authenticate'], function ($, auth) {
    return auth;
+});
+
+require(['jquery','dom_ready','module_test'], function ($, module_test) {
+    return module_test;
 });
 
