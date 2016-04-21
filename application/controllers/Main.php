@@ -1,21 +1,17 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Main extends CI_Controller
-{
+/**
+ * This controller can be accessed 
+ * for all logged in users
+ */
+class Main extends MY_Controller {
 
-    function __construct()
-    {
-        parent::__construct();
-        $this->load->model('Auth_model');
-    }
-
-    public function index()
-    {
-        $data['data'] = array(
-            'meta' => 'My site',
-            'title' => 'Open Source Todo app 1.0'
-        );
-        $this->smarty->view('default.tpl', $data);
-    }
+	public function index()
+	{
+		$data['data'] = array(
+			'meta' => 'My site',
+			'title' => 'Open Source Todo app 1.0'
+		);
+		$this->smarty->view('default.tpl', $data);
+	}
 }

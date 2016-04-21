@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-04-20 11:36:32
+/* Smarty version 3.1.29, created on 2016-04-21 16:30:03
   from "/Applications/MAMP/htdocs/mysite/application/views/templates/default.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57173f9018e489_70120727',
+  'unifunc' => 'content_5718d5db80b382_81748404',
   'file_dependency' => 
   array (
     'a72da298d2b7ca6bb3b38b7d264b75677fdf0ab3' => 
     array (
       0 => '/Applications/MAMP/htdocs/mysite/application/views/templates/default.tpl',
-      1 => 1461141390,
+      1 => 1461245396,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57173f9018e489_70120727 ($_smarty_tpl) {
+function content_5718d5db80b382_81748404 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <!doctype html>
@@ -27,7 +27,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 <head>
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "assets", array (
-  0 => 'block_39762917757173f90151fd0_42922938',
+  0 => 'block_7192162695718d5db7cde27_63556565',
   1 => false,
   3 => 0,
   2 => 0,
@@ -36,10 +36,9 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "assets", array (
 
 </head>
 <body>
-<a class="github-fork-ribbon" href="https://github.com/rdobrynin/mysite" title="Fork me on GitHub">Fork me on GitHub</a>
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "header", array (
-  0 => 'block_38232148257173f9016da63_04236584',
+  0 => 'block_654491245718d5db7e9b43_33471274',
   1 => false,
   3 => 0,
   2 => 0,
@@ -54,7 +53,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "header", array (
     </div>
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "content", array (
-  0 => 'block_135883160057173f901779e8_49826920',
+  0 => 'block_15590395915718d5db7f39c1_43986615',
   1 => false,
   3 => 0,
   2 => 0,
@@ -63,7 +62,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "content", array 
 
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "footer", array (
-  0 => 'block_184709458057173f901811b5_48835383',
+  0 => 'block_3894567585718d5db7fd871_26587066',
   1 => false,
   3 => 0,
   2 => 0,
@@ -74,7 +73,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "footer", array (
 </body>
 </html><?php }
 /* {block 'assets'}  file:default.tpl */
-function block_39762917757173f90151fd0_42922938($_smarty_tpl, $_blockParentStack) {
+function block_7192162695718d5db7cde27_63556565($_smarty_tpl, $_blockParentStack) {
 ?>
 
         <meta charset="utf-8">
@@ -84,10 +83,6 @@ function block_39762917757173f90151fd0_42922938($_smarty_tpl, $_blockParentStack
         <meta name="author" content="Roman Dobrynin">
         <title><?php echo $_smarty_tpl->tpl_vars['data']->value['meta'];?>
 </title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
-        <!--[if lt IE 9]>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
-        <![endif]-->
         <link rel="stylesheet" href="<?php echo base_url('stylesheets/styles.css');?>
 ">
         <?php echo '<script'; ?>
@@ -100,7 +95,7 @@ function block_39762917757173f90151fd0_42922938($_smarty_tpl, $_blockParentStack
 }
 /* {/block 'assets'} */
 /* {block 'header'}  file:default.tpl */
-function block_38232148257173f9016da63_04236584($_smarty_tpl, $_blockParentStack) {
+function block_654491245718d5db7e9b43_33471274($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <header id="header" class="nav nav-top">
@@ -110,7 +105,7 @@ function block_38232148257173f9016da63_04236584($_smarty_tpl, $_blockParentStack
 }
 /* {/block 'header'} */
 /* {block 'content'}  file:default.tpl */
-function block_135883160057173f901779e8_49826920($_smarty_tpl, $_blockParentStack) {
+function block_15590395915718d5db7f39c1_43986615($_smarty_tpl, $_blockParentStack) {
 ?>
 
         <div class="main">
@@ -127,7 +122,7 @@ function block_135883160057173f901779e8_49826920($_smarty_tpl, $_blockParentStac
 }
 /* {/block 'content'} */
 /* {block 'footer'}  file:default.tpl */
-function block_184709458057173f901811b5_48835383($_smarty_tpl, $_blockParentStack) {
+function block_3894567585718d5db7fd871_26587066($_smarty_tpl, $_blockParentStack) {
 ?>
 
         <footer>

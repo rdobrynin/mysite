@@ -8,17 +8,12 @@
         <meta name="description" content="TODO">
         <meta name="author" content="Roman Dobrynin">
         <title>{$data['meta']}</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
-        <!--[if lt IE 9]>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
-        <![endif]-->
         <link rel="stylesheet" href="{base_url('stylesheets/styles.css')}">
         <script data-main="{base_url('scripts/app_main.js')}"
                 src={base_url('bower_components/requirejs/require.js')}></script>
     {/block}
 </head>
 <body>
-<a class="github-fork-ribbon" href="https://github.com/rdobrynin/mysite" title="Fork me on GitHub">Fork me on GitHub</a>
 {block name="header"}
     <header id="header" class="nav nav-top">
 
