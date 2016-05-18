@@ -16,7 +16,7 @@
 <body>
 {block name="header"}
     <header id="header" class="nav nav-top">
-
+      <span>{if $data['session'] == true}{if $user}Hello, {$user['first_name']}&nbsp;{/if}<a href="{site_url("dashboard")}">My dashboard</a>&nbsp;|&nbsp;<a href="{site_url("auth/logout")}">logout</a>{else}<a href="{site_url("auth")}">login</a>{/if}</span>
     </header>
 {/block}
 <div class="content-wrapper">
@@ -36,13 +36,13 @@
                 elit.</p>
         </div>
     {/block}
-    {block name="footer"}
         <footer>
+            {block name="footer"}
             <div class="content">
                 <small class="copyright">&copy; {'Y'|date} by Roman Dobrynin</small>
             </div>
+            {/block}
         </footer>
-    {/block}
 </div>
 </body>
 </html>

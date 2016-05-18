@@ -9,10 +9,13 @@ class Dashboard extends MY_Controller {
 	public function index()
 	{
 		if ($this->session->userdata("logged_in")) {
-			$this->load->view("header");
-			$this->load->view("navbar");
-			$this->load->view("dashboard");
-			$this->load->view("footer");
+			$data['data'] = array(
+				'section' => $this->uri->segment(1)
+			);
+			$data['user'] = $this->session->userdata();
+
+
+			$this->smarty->view('dashboard/default.tpl', $data);
 		}
 		else {
 			redirect("main");

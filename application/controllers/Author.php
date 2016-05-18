@@ -10,10 +10,7 @@ class Author extends MY_Controller {
 
 	public function index()
 	{
-		$this->load->view("header");
-		$this->load->view("navbar");
-		$this->load->view("author");
-		$this->load->view("footer");
+		$this->smarty->view('default.tpl');
 	}
 
 }

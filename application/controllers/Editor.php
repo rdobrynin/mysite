@@ -10,9 +10,10 @@ class Editor extends MY_Controller {
 
 	public function index()
 	{
-		$this->load->view("header");
-		$this->load->view("navbar");
-		$this->load->view("editor");
-		$this->load->view("footer");
+		$data['data'] = array(
+			'section' => $this->uri->segment(1)
+		);
+
+		$this->smarty->view('editor/default.tpl', $data);
 	}
 }

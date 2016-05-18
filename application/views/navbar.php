@@ -7,7 +7,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 	      	</button>
-	      	<a class="navbar-brand" href="#">CI Auth</a>
+	      	<a class="navbar-brand" href="#">My Apps</a>
 		</div>  
   		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		  		
 	  		<ul class="nav navbar-nav">
@@ -15,6 +15,7 @@
 				<li><a href="<?php echo site_url("admin") ?>">admin</a></li>              
 				<li><a href="<?php echo site_url("editor") ?>">editor</a></li> 
 				<li><a href="<?php echo site_url("author") ?>">author</a></li> 
+				<li><a href="<?php echo site_url("account") ?>">Account</a></li>
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">		        
 				<li><a href="<?php echo site_url("auth/logout") ?>">logout</a></li> 

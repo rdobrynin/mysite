@@ -1,5 +1,5 @@
 	<footer> 
-        <p class="text-center">&copy; 2015 CI Auth</p>                  
+        <p class="text-center">&copy; 2016 Roman Dobrynih</p>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

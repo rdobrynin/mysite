@@ -8,10 +8,13 @@ class Main extends MY_Controller {
 
 	public function index()
 	{
+
 		$data['data'] = array(
 			'meta' => 'My site',
-			'title' => 'Open Source Todo app 1.0'
+			'title' => 'Open Source Todo app 1.0',
+			'session' => $this->session->userdata("logged_in") ? true : false
 		);
+		$this->session->userdata("logged_in") ? $data['user'] = $this->session->userdata() : false;
 		$this->smarty->view('default.tpl', $data);
 	}
 }

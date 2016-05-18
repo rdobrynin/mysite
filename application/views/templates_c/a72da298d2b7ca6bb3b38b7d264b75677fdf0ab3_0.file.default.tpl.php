@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-04-21 16:30:03
+/* Smarty version 3.1.29, created on 2016-05-10 10:53:32
   from "/Applications/MAMP/htdocs/mysite/application/views/templates/default.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5718d5db80b382_81748404',
+  'unifunc' => 'content_5731937c3a44a2_31104955',
   'file_dependency' => 
   array (
     'a72da298d2b7ca6bb3b38b7d264b75677fdf0ab3' => 
     array (
       0 => '/Applications/MAMP/htdocs/mysite/application/views/templates/default.tpl',
-      1 => 1461245396,
+      1 => 1462866589,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5718d5db80b382_81748404 ($_smarty_tpl) {
+function content_5731937c3a44a2_31104955 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <!doctype html>
@@ -27,7 +27,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 <head>
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "assets", array (
-  0 => 'block_7192162695718d5db7cde27_63556565',
+  0 => 'block_5115532935731937c3452b9_44128387',
   1 => false,
   3 => 0,
   2 => 0,
@@ -38,7 +38,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "assets", array (
 <body>
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "header", array (
-  0 => 'block_654491245718d5db7e9b43_33471274',
+  0 => 'block_13509791215731937c361b75_37445530',
   1 => false,
   3 => 0,
   2 => 0,
@@ -53,27 +53,29 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "header", array (
     </div>
     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "content", array (
-  0 => 'block_15590395915718d5db7f39c1_43986615',
+  0 => 'block_21173695185731937c38d156_10986048',
   1 => false,
   3 => 0,
   2 => 0,
 ));
 ?>
 
-    <?php 
+        <footer>
+            <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "footer", array (
-  0 => 'block_3894567585718d5db7fd871_26587066',
+  0 => 'block_5046872925731937c397171_57336022',
   1 => false,
   3 => 0,
   2 => 0,
 ));
 ?>
 
+        </footer>
 </div>
 </body>
 </html><?php }
 /* {block 'assets'}  file:default.tpl */
-function block_7192162695718d5db7cde27_63556565($_smarty_tpl, $_blockParentStack) {
+function block_5115532935731937c3452b9_44128387($_smarty_tpl, $_blockParentStack) {
 ?>
 
         <meta charset="utf-8">
@@ -95,17 +97,22 @@ function block_7192162695718d5db7cde27_63556565($_smarty_tpl, $_blockParentStack
 }
 /* {/block 'assets'} */
 /* {block 'header'}  file:default.tpl */
-function block_654491245718d5db7e9b43_33471274($_smarty_tpl, $_blockParentStack) {
+function block_13509791215731937c361b75_37445530($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <header id="header" class="nav nav-top">
-
+      <span><?php if ($_smarty_tpl->tpl_vars['data']->value['session'] == true) {
+if ($_smarty_tpl->tpl_vars['user']->value) {?>Hello, <?php echo $_smarty_tpl->tpl_vars['user']->value['first_name'];?>
+&nbsp;<?php }?><a href="<?php echo site_url("dashboard");?>
+">My dashboard</a>&nbsp;|&nbsp;<a href="<?php echo site_url("auth/logout");?>
+">logout</a><?php } else { ?><a href="<?php echo site_url("auth");?>
+">login</a><?php }?></span>
     </header>
 <?php
 }
 /* {/block 'header'} */
 /* {block 'content'}  file:default.tpl */
-function block_15590395915718d5db7f39c1_43986615($_smarty_tpl, $_blockParentStack) {
+function block_21173695185731937c38d156_10986048($_smarty_tpl, $_blockParentStack) {
 ?>
 
         <div class="main">
@@ -122,16 +129,14 @@ function block_15590395915718d5db7f39c1_43986615($_smarty_tpl, $_blockParentStac
 }
 /* {/block 'content'} */
 /* {block 'footer'}  file:default.tpl */
-function block_3894567585718d5db7fd871_26587066($_smarty_tpl, $_blockParentStack) {
+function block_5046872925731937c397171_57336022($_smarty_tpl, $_blockParentStack) {
 ?>
 
-        <footer>
             <div class="content">
                 <small class="copyright">&copy; <?php echo date('Y');?>
  by Roman Dobrynin</small>
             </div>
-        </footer>
-    <?php
+            <?php
 }
 /* {/block 'footer'} */
 }

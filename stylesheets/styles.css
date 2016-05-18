@@ -92,7 +92,20 @@ p {
   background-color: #0F61AD;
 }
 
-/* line 1, ../scss/_header.scss */
+/* line 2, ../scss/_header.scss */
+header span {
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+/* line 7, ../scss/_header.scss */
+header span a {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* line 15, ../scss/_header.scss */
 .nav-top {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   position: fixed;

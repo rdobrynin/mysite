@@ -1,0 +1,32 @@
+.container {
+  .page-header {
+    position: relative;
+    a.btn {
+      position: absolute;
+      right:0;
+      top:10px;
+    }
+  }
+  // table
+  table {
+    thead {
+      th {
+        td {
+
+        }
+      }
+    }
+    tbody {
+      tr {
+        &.credit {
+          background:	url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAHklEQVQ4T2P8z8BgzEABYBw1gGE0DBhGw4BhWIQBAFLfEzE5cJ/rAAAAAElFTkSuQmCC);
+          background:	rgba(255, 0, 0, 0.2) !important;
+        }
+        td {
+
+        }
+      }
+    }
+
+  }
+}

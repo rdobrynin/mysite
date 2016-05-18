@@ -10,10 +10,11 @@ class Admin extends MY_Controller {
 	
 	public function index()
 	{
-		$this->load->view("header");
-		$this->load->view("navbar");
-		$this->load->view("admin");
-		$this->load->view("footer");
+		$data['data'] = array(
+			'section' => $this->uri->segment(1)
+		);
+
+		$this->smarty->view('admin/default.tpl', $data);
 	}
 
 }
