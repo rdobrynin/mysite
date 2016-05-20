@@ -10,23 +10,27 @@ class Account extends MY_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->model('account_model');
-		$id = $this->session->userdata('id');
 	}
 
 	
 	public function index()
 	{
+		if (!$this->session->userdata("logged_in")) {
+			redirect("main");
+		}
 
 		$user = $this->session->userdata();
 		$id = $user['id'];
+		$result = $this->account_model->getAllData($id);
+
 		$data['data'] = array(
-			'account' => $this->account_model->getAllData($id),
+			'account' => $result,
 			'section' => $this->uri->segment(1)
 		);
 
 
 
-		$this->smarty->view('account/default.tpl', $data);
+		$this->load->view('templates/account/default.php', $data);
 	}
 
 

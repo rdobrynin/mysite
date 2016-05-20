@@ -15,16 +15,29 @@ class Account_model extends CI_Model {
 
 	public function getAllData($id)
 	{
+		$return = array();
 		$query = $this
 			->db
 			->where('uid', $id)
 			->where('status', '1')
 			->get('account');
-		if ($query) {
-			return $query->result_array();
-		} else {
-			return FALSE;
+		$result = $query->result_array();
+		if(!empty($result)){
+			$count = 0;
+			foreach($result as $v){
+				$return[$count]['id'] = $v["id"];
+				$return[$count]['uid'] = $v["uid"];
+				$return[$count]['summa'] = $v["summa"];
+				$return[$count]['credit'] = $v["credit"];
+				$return[$count]['desc'] = $v["desc"];
+				$return[$count]['date_created'] = strtotime($v["date_created"]);
+				$return[$count]['date_due'] = strtotime($v["date_due"]);
+				$return[$count]['notify'] = $v["notify"];
+				$return[$count]['status'] = $v["status"];
+				$count ++;
+			}
 		}
+		return $return;
 	}
 
 	//	 Remove Item by id
