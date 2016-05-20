@@ -30,7 +30,7 @@ class Account_model extends CI_Model {
 				$return[$count]['summa'] = $v["summa"];
 				$return[$count]['credit'] = $v["credit"];
 				$return[$count]['desc'] = $v["desc"];
-				$return[$count]['date_created'] = strtotime($v["date_created"]);
+				$return[$count]['date_created'] = time($v["date_created"]);
 				$return[$count]['date_due'] = strtotime($v["date_due"]);
 				$return[$count]['notify'] = $v["notify"];
 				$return[$count]['status'] = $v["status"];

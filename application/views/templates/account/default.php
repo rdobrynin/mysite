@@ -73,8 +73,8 @@
                 <td>{{$index + 1}}</td>
                 <td>{{rows.summa}}.-</td>
                 <td>{{rows.desc}}</td>
-                <td>{{rows.date_created | date:'fullDate'}}</td>
-                <td>{{rows.date_due ? (rows.date_due | date:'fullDate') : '-'}}</td>
+                <td>{{rows.date_created | time}}</td>
+                <td>{{rows.date_due ? (rows.date_due | time) : '-'}}</td>
                 <td>
                     <a href="javascript:void(0);" class="btn btn-xs btn-success" data-id="{{rows.id}}" ng-click="edit($event);">Edit</a>
                     <a href="javascript:void(0);" class="btn btn-xs btn-info" data-id="{{rows.id}}" ng-click="complete($event);">complete</a>
